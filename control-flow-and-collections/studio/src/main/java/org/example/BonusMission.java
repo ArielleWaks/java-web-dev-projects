@@ -3,20 +3,16 @@ package org.example;
 import java.util.HashMap;
 //import java.util.ArrayList;
 //import java.util.Map;
-import java.util.Scanner;
-import java.io.File;
+//import java.util.Scanner;
+//import java.io.File;
 
-public class CountingCharacters {
+public class BonusMission {
+
     public static void main(String[] args) {
-
         HashMap<String, Double> counts = new HashMap<>();
-        Scanner input = new Scanner(System.in);
         String quote;
 
-        File quoteFile = new File("quote.txt");
-
-        System.out.println("Enter quote");
-        quote =input.nextLine().toLowerCase();
+        quote = "/Users/ariellewaks/Projects/LaunchCode/java-web-dev-projects/control-flow-and-collections/studio/src/main/java/org/example/quote.txt";
 
         char[] charactersInQuote = quote.toCharArray();
 
@@ -33,4 +29,5 @@ public class CountingCharacters {
 
         System.out.println("HashMap: " + counts);
     }
+
 }

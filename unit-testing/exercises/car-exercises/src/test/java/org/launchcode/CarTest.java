@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CarTest {
-    Car test_car;
+    Car test_car; //Don't initialize; only declare (initialize after @BeforeEach annotation)
 
     @BeforeEach
     public void initCar() {
@@ -36,5 +36,14 @@ class CarTest {
     @Test
     public void testGasOverfillException() {
         assertThrows(IllegalArgumentException.class, () -> test_car.addGas(5), "Car cannot have more gas in tank than the size of the tank");
+    }
+
+    //test whether constructor correctly sets fields
+    @Test
+    public void constructorSetsFields() {
+        assertEquals("Toyota", test_car.getMake());
+        assertEquals("Prius", test_car.getModel());
+        assertEquals(10, test_car.getGasTankSize(), 0.001);
+        assertEquals(50, test_car.getMilesPerGallon(), 0.001);
     }
 }

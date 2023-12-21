@@ -1,4 +1,4 @@
-public class Cat {
+ public class Cat {
 
     private boolean tired = false;
     private boolean hungry = false;
@@ -9,6 +9,10 @@ public class Cat {
 
     public Cat (double aWeight) {
         weight = aWeight;
+    }
+
+    public Cat () {
+        weight = 13; //no argument constructor
     }
 
     /**** Getters and Setters ****/

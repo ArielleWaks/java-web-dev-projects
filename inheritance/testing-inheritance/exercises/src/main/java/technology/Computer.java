@@ -7,14 +7,21 @@ public class Computer {
 
     private int battery;
 
+    private static int nextId = 1;
+    private int id;
+
     public Computer(int year, String operatingSystem, int battery) {
         this.year = year;
         this.operatingSystem = operatingSystem;
         setBattery(battery);
+        this.id = nextId;
+        nextId ++;
     }
 
     public Computer() {
         battery = 100;
+        this.id = nextId;
+        nextId ++;
     }
 
     public int getYear() {
@@ -49,6 +56,9 @@ public class Computer {
         } else {
             this.battery = battery;
         }
+    }
+    public int getId() {
+        return id;
     }
 
     public void plugIn() {

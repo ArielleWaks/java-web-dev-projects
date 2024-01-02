@@ -12,6 +12,5 @@ public class ConeComparator implements Comparator<Cone> {
         } else {
             return 0;
         }
-        // return o1.getCost() - o2.getCost() <= 0 ? -1 : 1;
     }
 }

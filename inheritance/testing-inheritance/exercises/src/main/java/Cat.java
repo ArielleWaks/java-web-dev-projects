@@ -1,4 +1,4 @@
- public class Cat {
+ public abstract class Cat {
 
     private boolean tired = false;
     private boolean hungry = false;

@@ -22,7 +22,6 @@ public class CountingCharacters {
 
         for (char character : charactersInQuote) {
             if (counts.containsKey(String.valueOf(character))) {
-                //TODO: add 1 to key's value
                 Double value = counts.get(String.valueOf(character));
                 value = value + 1;
                 counts.put(String.valueOf(character), value);

@@ -4,27 +4,33 @@ package org.launchcode;
 import java.util.Date;
 
 public class MenuItem {
-    //private String name;
+    private String name;
     private double price;
     private String description;
     private String category;
 
-    private final Date created;
+   // private final Date created;
 
     //private LocalDate date;
     //private boolean isNew;
 
-    public MenuItem(double aPrice, String aDescription, String aCategory, Date aCreated) {
+    public MenuItem(String aName, double aPrice, String aDescription, String aCategory) {
+        this.name = aName;
         this.price = aPrice;
         this.description = aDescription;
         this.category = aCategory;
-        this.created = aCreated;
+        //this.created = aCreated;
         //this.isNew = aIsNew;
         //this.name = name;
         //this.date = LocalDate.now();
     }
 
     //public String getName() { return name; }
+
+    public String toString() {
+        return name + " $" + price + "\n" + description;
+    }
+
 
     public double getPrice() { return price; }
 
@@ -43,6 +49,7 @@ public class MenuItem {
     public void setCategory(String aCategory) {
         aCategory = this.category;
     }
+
 
 //    public boolean isNew(Date today) {
 //        public int compareTo;

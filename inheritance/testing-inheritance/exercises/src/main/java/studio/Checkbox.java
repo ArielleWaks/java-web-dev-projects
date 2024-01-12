@@ -1,2 +1,4 @@
-package studio;public class Checkbox {
+package studio;
+
+public class Checkbox extends Question {
 }

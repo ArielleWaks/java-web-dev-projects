@@ -1,2 +1,6 @@
-package studio;public class Question {
+package studio;
+
+public abstract class Question {
+    private String textBody;
+
 }

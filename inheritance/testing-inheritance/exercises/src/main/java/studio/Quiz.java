@@ -1,2 +1,4 @@
-package studio;public class Quiz {
+package studio;
+
+public class Quiz {
 }

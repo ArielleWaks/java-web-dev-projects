@@ -1,2 +1,4 @@
-package studio;public class MultipleChoice {
+package studio;
+
+public class MultipleChoice extends Question {
 }

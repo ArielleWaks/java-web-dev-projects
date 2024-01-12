@@ -1,2 +1,4 @@
-package studio;public class TrueFalse {
+package studio;
+
+public class TrueFalse extends Question {
 }

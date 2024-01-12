@@ -1,6 +1,6 @@
-package org.launchcode;
+package org.launchcode; // declares the package in which the file resides
 
-import java.util.Scanner;
+import java.util.Scanner; // allows us to refer to this class as Scanner (instead of full name)
 
 public class TempConverter {
     public static void main(String[] args) {

@@ -1,2 +1,4 @@
-package org.launchcode;public class BasicDisc {
+package org.launchcode;
+
+public abstract class BasicDisc {
 }
